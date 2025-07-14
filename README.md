@@ -200,3 +200,137 @@ Example file: `docker-compose.yml`
 - Push your Docker image to Docker Hub using `docker push`
 - Use `depends_on` in Compose to control startup order
 - Try scaling services with `docker-compose up --scale web=2`
+
+
+---
+
+## 📅 Week 7: Jenkins CI/CD
+
+### ✅ Topics Covered:
+- What is Jenkins and how it fits into CI/CD
+- Installing Jenkins locally (or using Docker)
+- Jenkins concepts: jobs, pipelines, plugins, agents
+- Freestyle vs pipeline jobs
+- Writing Jenkinsfile (Declarative vs Scripted pipelines)
+- Triggering builds from GitHub
+
+### 🛠️ Tools:
+- Jenkins
+- GitHub
+- Shell scripting
+- VS Code
+
+### 📁 Mini Project:
+> Set up Jenkins on your machine and:
+> - Create a freestyle job to pull code from GitHub and run a shell script
+> - Create a pipeline job using a `Jenkinsfile`
+
+---
+
+## 📅 Week 8: Infrastructure as Code (IaC) Overview
+
+### ✅ Topics Covered:
+- What is Infrastructure as Code (IaC)?
+- Benefits of IaC: version control, automation, repeatability
+- YAML and JSON syntax
+- Comparison: Terraform vs Ansible vs CloudFormation
+- Basic lifecycle: `init`, `plan`, `apply`, `destroy`
+
+### 🛠️ Tools:
+- YAML
+- Terraform CLI (intro)
+- VS Code
+
+### 📁 Mini Project:
+> Write a basic Terraform config that:
+> - Defines a local null resource (as a placeholder)
+> - Uses variables and outputs
+
+---
+
+## 📅 Week 9: Terraform Basics
+
+### ✅ Topics Covered:
+- Providers and resources (AWS, local)
+- Input variables and outputs
+- State management
+- Basic modules and reusability
+- AWS provisioning examples (EC2, S3)
+
+### 🛠️ Tools:
+- Terraform CLI
+- AWS CLI
+- AWS Free Tier account
+- VS Code
+
+### 📁 Mini Project:
+> Use Terraform to deploy:
+> - An EC2 instance
+> - Or an S3 bucket with a static website
+
+---
+
+## 📅 Week 10: AWS Essentials
+
+### ✅ Topics Covered:
+- What is the cloud? Intro to AWS
+- IAM users, policies, and roles
+- EC2 instance setup (with key pairs)
+- S3 bucket creation and permissions
+- VPCs and Security Groups (basic networking)
+
+### 🛠️ Tools:
+- AWS Console
+- AWS CLI
+- Terraform (optional)
+
+### 📁 Mini Project:
+> Launch a web server (e.g., Nginx) on EC2
+> Or host a static website in an S3 bucket
+
+---
+
+## 📅 Week 11: Kubernetes Basics
+
+### ✅ Topics Covered:
+- What is Kubernetes? Why use it?
+- Core concepts: Pods, ReplicaSets, Deployments, Services
+- Writing Kubernetes YAML files
+- Deploying to Minikube or local cluster
+- kubectl basics
+
+### 🛠️ Tools:
+- Minikube or k3s (local Kubernetes cluster)
+- kubectl CLI
+- VS Code
+
+### 📁 Mini Project:
+> Deploy a Dockerized web app on Minikube:
+> - Create deployment and service YAMLs
+> - Expose the service via NodePort
+
+---
+
+## 📅 Week 12: Final DevOps Project & Review
+
+### ✅ Topics Covered:
+- Building a full CI/CD pipeline
+- Using Docker + GitHub + Jenkins end-to-end
+- Monitoring overview: Prometheus + Grafana (intro)
+- Logging and alerts (basic concepts)
+- DevOps resume, GitHub profile, and career tips
+
+### 🛠️ Tools:
+- GitHub
+- Jenkins
+- Docker
+- Prometheus / Grafana (optional)
+
+### 📁 Final Project:
+> Build a complete DevOps pipeline:
+> - Push code to GitHub
+> - Jenkins builds a Docker image
+> - Image is pushed to Docker Hub
+> - Deployed to a staging or production environment (Docker, VM, or Kubernetes)
+
+Bonus: Add monitoring (Prometheus + Grafana) if you're feeling confident!
